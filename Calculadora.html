@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <div class="container-md" style="border: 3px black;">
+        <div class="row">
+            <div class="col">
+                <h3>SUMA DOS NÚMEROS</h3>
+                <form action="">
+                    Valor1:<input type="number" id="valor1" value="0"><br>
+                    Valor2:<input type="number" id="valor2" value="0"><br>
+                    <input type="button" class="btn btn-primary" value="sumar" onclick="sumar();"><br>
+                    <input type="button" class="btn btn-primary" value="restar" onclick="restar();"><br>
+                    <input type="button" class="btn btn-primary" value="multiplicar" onclick="multiplicar();"><br>
+                    <input type="button" class="btn btn-primary" value="dividir" onclick="dividir();"><br>
+                    Resultado:<input type="number" id="resultado" value="0">
+                </form>
+
+
+
+                <script>
+                    function sumar(){
+                        var v1=parseInt(document.getElementById("valor1").value);
+                        var v2=parseInt(document.getElementById("valor2").value);
+                        var suma=0;
+
+                        var suma=v1+v2;
+
+                        document.getElementById("resultado").value=suma;
+                    }
+
+                    function restar(){
+                        var v1=parseInt(document.getElementById("valor1").value);
+                        var v2=parseInt(document.getElementById("valor2").value);
+                        var resta=0;
+
+                        resta=v1-v2;
+
+                        document.getElementById("resultado").value=resta;
+                    }
+
+                    function multiplicar(){
+                        var v1=parseInt(document.getElementById("valor1").value);
+                        var v2=parseInt(document.getElementById("valor2").value);
+                        var multiplicar=0;
+
+                        multiplicar=v1*v2;
+
+                        document.getElementById("resultado").value=multiplicar;
+                    }
+
+                    function dividir(){
+                        var v1=parseInt(document.getElementById("valor1").value);
+                        var v2=parseInt(document.getElementById("valor2").value);
+                        var dividir=0;
+
+                        multiplicar=v1/v2;
+
+                        document.getElementById("resultado").value=dividir;
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
